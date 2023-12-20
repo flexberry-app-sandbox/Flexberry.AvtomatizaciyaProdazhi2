@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISAvtomatizaciya_Prodazhi2КолВРез",
+  "modelName": "i-i-s-avtomatizaciya-prodazhi2-кол-в-рез",
+  "className": "КолВРез",
+  "nameSpace": "IIS.Avtomatizaciya_Prodazhi2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "номенк",
+      "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-номенк",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КолВРезE",
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-кол-в-рез",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Номен",
+          "lookupValueField": "номен",
+          "relationName": "Номенк",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номен",
+              "caption": "Номенклатура",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Номенклатура",
+          "name": "номенк",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-номенк",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "КолВРезL",
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-кол-в-рез",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Номенк",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номен",
+              "caption": "Номен",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номен",
+          "name": "номенк",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-номенк",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

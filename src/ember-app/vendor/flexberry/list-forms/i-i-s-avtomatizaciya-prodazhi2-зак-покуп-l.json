@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e",
+  "editForm": "i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e",
+  "external": false,
+  "caption": "Заказ покупателя",
+  "name": "IISAvtomatizaciya_Prodazhi2ЗакПокупL",
+  "className": "ЗакПокупL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-зак-покуп",
+      "modelProjection": "ЗакПокупL"
+    }
+  ]
+}

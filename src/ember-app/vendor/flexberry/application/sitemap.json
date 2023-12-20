@@ -1,0 +1,130 @@
+﻿{
+  "applicationCaption": "Avtomatizaciya_ prodazhi2",
+  "applicationTitle": "Avtomatizaciya_ prodazhi2",
+  "items": [
+    {
+      "link": null,
+      "menuName": "avtomatizaciya-prodazhi2",
+      "caption": "Avtomatizaciya_Prodazhi2",
+      "title": "Avtomatizaciya_Prodazhi2",
+      "children": [
+        {
+          "link": null,
+          "menuName": "документы",
+          "caption": "Документы",
+          "title": "Документы",
+          "children": [
+            {
+              "link": "i-i-s-avtomatizaciya-prodazhi2-зак-покуп-l",
+              "menuName": null,
+              "caption": "Зак покуп",
+              "title": "",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "отчеты",
+          "caption": "Отчеты",
+          "title": "Отчеты",
+          "children": [
+            {
+              "link": "i-i-s-avtomatizaciya-prodazhi2-отч-о-прод-l",
+              "menuName": null,
+              "caption": "Отч о прод",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-avtomatizaciya-prodazhi2-отч-ост-н-скл-l",
+              "menuName": null,
+              "caption": "Отч ост н скл",
+              "title": "",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "справочники",
+          "caption": "Справочники",
+          "title": "Справочники",
+          "children": [
+            {
+              "link": "i-i-s-avtomatizaciya-prodazhi2-ед-измер-l",
+              "menuName": null,
+              "caption": "Ед измер",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-avtomatizaciya-prodazhi2-долж-l",
+              "menuName": null,
+              "caption": "Долж",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-avtomatizaciya-prodazhi2-менедж-l",
+              "menuName": null,
+              "caption": "Менедж",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-avtomatizaciya-prodazhi2-сотруд-l",
+              "menuName": null,
+              "caption": "Сотруд",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-avtomatizaciya-prodazhi2-номенк-l",
+              "menuName": null,
+              "caption": "Номенк",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-avtomatizaciya-prodazhi2-организ-l",
+              "menuName": null,
+              "caption": "Организ",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-avtomatizaciya-prodazhi2-подраз-l",
+              "menuName": null,
+              "caption": "Подраз",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-avtomatizaciya-prodazhi2-кол-в-рез-l",
+              "menuName": null,
+              "caption": "Кол в рез",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-avtomatizaciya-prodazhi2-контр-l",
+              "menuName": null,
+              "caption": "Контр",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-avtomatizaciya-prodazhi2-склады-l",
+              "menuName": null,
+              "caption": "Склады",
+              "title": "",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

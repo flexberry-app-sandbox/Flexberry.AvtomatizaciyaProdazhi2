@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-avtomatizaciya-prodazhi2-кол-в-рез-e",
+  "editForm": "i-i-s-avtomatizaciya-prodazhi2-кол-в-рез-e",
+  "external": false,
+  "caption": "Количество в резерве",
+  "name": "IISAvtomatizaciya_Prodazhi2КолВРезL",
+  "className": "КолВРезL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-кол-в-рез",
+      "modelProjection": "КолВРезL"
+    }
+  ]
+}

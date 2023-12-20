@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISAvtomatizaciya_Prodazhi2Номенк",
+  "modelName": "i-i-s-avtomatizaciya-prodazhi2-номенк",
+  "className": "Номенк",
+  "nameSpace": "IIS.Avtomatizaciya_Prodazhi2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номен",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "едИзмер",
+      "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-ед-измер",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "НоменкE",
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-номенк",
+      "attrs": [
+        {
+          "name": "номен",
+          "caption": "Номенклатура",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ЕдИзм",
+          "lookupValueField": "едИзм",
+          "relationName": "ЕдИзмер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "едИзм",
+              "caption": "Единицы измерения",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Единицы измерения",
+          "name": "едИзмер",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-ед-измер",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "НоменкL",
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-номенк",
+      "attrs": [
+        {
+          "name": "номен",
+          "caption": "Номен",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЕдИзмер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "едИзм",
+              "caption": "Ед изм",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Ед изм",
+          "name": "едИзмер",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-ед-измер",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

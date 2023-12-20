@@ -1,0 +1,63 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Менедж",
+      "projection": "МенеджL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организ",
+      "projection": "ОрганизL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Подраз",
+      "projection": "ПодразL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Склады",
+      "projection": "СкладыL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Контр",
+      "projection": "КонтрL",
+      "detailModelName": null
+    },
+    {
+      "master": "номенк",
+      "displayAttributeName": "номен",
+      "required": true,
+      "relationName": "ТЧТовИУс.Номенк",
+      "projection": "НоменкL",
+      "detailModelName": "i-i-s-avtomatizaciya-prodazhi2-т-ч-тов-и-ус"
+    }
+  ],
+  "external": false,
+  "caption": "Заказ покупателя",
+  "name": "IISAvtomatizaciya_Prodazhi2ЗакПокупE",
+  "className": "ЗакПокупE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-зак-покуп",
+      "modelProjection": "ЗакПокупE"
+    }
+  ]
+}

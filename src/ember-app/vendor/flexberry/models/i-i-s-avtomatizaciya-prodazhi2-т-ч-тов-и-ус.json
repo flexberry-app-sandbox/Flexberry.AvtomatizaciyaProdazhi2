@@ -1,0 +1,137 @@
+﻿{
+  "name": "IISAvtomatizaciya_Prodazhi2ТЧТовИУс",
+  "modelName": "i-i-s-avtomatizaciya-prodazhi2-т-ч-тов-и-ус",
+  "className": "ТЧТовИУс",
+  "nameSpace": "IIS.Avtomatizaciya_Prodazhi2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количестов",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "колКЗаказПоста",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сумма",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "суммаНДС",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цена",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "номенк",
+      "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-номенк",
+      "inverse": null
+    },
+    {
+      "polymorphic": true,
+      "presence": true,
+      "name": "отчОПрод",
+      "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-отч-о-прод",
+      "inverse": "тЧТовИУс"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧТовИУсE",
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-т-ч-тов-и-ус",
+      "attrs": [
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "количестов",
+          "caption": "Количестов",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "колКЗаказПоста",
+          "caption": "Количество к заказу поставщика",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "суммаНДС",
+          "caption": "Сумма НДС",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Номен",
+          "lookupValueField": "номен",
+          "relationName": "Номенк",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номен",
+              "caption": "Номенклатура",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Номенклатура",
+          "name": "номенк",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-номенк",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISAvtomatizaciya_Prodazhi2Контр",
+  "modelName": "i-i-s-avtomatizaciya-prodazhi2-контр",
+  "className": "Контр",
+  "nameSpace": "IIS.Avtomatizaciya_Prodazhi2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "контрагент",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КонтрE",
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-контр",
+      "attrs": [
+        {
+          "name": "контрагент",
+          "caption": "Контрагент",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КонтрL",
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-контр",
+      "attrs": [
+        {
+          "name": "контрагент",
+          "caption": "Контрагент",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

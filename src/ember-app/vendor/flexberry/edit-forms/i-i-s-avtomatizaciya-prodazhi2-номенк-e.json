@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ЕдИзмер",
+      "projection": "ЕдИзмерL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Номеклатура",
+  "name": "IISAvtomatizaciya_Prodazhi2НоменкE",
+  "className": "НоменкE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-номенк",
+      "modelProjection": "НоменкE"
+    }
+  ]
+}

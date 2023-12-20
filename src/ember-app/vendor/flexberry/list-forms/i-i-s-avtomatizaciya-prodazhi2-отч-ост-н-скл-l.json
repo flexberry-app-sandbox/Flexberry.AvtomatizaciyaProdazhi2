@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-avtomatizaciya-prodazhi2-отч-ост-н-скл-e",
+  "editForm": "i-i-s-avtomatizaciya-prodazhi2-отч-ост-н-скл-e",
+  "external": false,
+  "caption": "Отчет остатки на складе",
+  "name": "IISAvtomatizaciya_Prodazhi2ОтчОстНСклL",
+  "className": "ОтчОстНСклL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-отч-ост-н-скл",
+      "modelProjection": "ОтчОстНСклL"
+    }
+  ]
+}

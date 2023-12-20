@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Организация",
+  "name": "IISAvtomatizaciya_Prodazhi2ОрганизE",
+  "className": "ОрганизE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-организ",
+      "modelProjection": "ОрганизE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-avtomatizaciya-prodazhi2-контр-e",
+  "editForm": "i-i-s-avtomatizaciya-prodazhi2-контр-e",
+  "external": false,
+  "caption": "Контрагент",
+  "name": "IISAvtomatizaciya_Prodazhi2КонтрL",
+  "className": "КонтрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-контр",
+      "modelProjection": "КонтрL"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-avtomatizaciya-prodazhi2-подраз-e",
+  "editForm": "i-i-s-avtomatizaciya-prodazhi2-подраз-e",
+  "external": false,
+  "caption": "Подразделение",
+  "name": "IISAvtomatizaciya_Prodazhi2ПодразL",
+  "className": "ПодразL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-подраз",
+      "modelProjection": "ПодразL"
+    }
+  ]
+}

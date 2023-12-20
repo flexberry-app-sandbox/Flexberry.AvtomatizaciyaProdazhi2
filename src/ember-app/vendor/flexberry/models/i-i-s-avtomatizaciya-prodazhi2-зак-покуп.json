@@ -1,0 +1,296 @@
+﻿{
+  "name": "IISAvtomatizaciya_Prodazhi2ЗакПокуп",
+  "modelName": "i-i-s-avtomatizaciya-prodazhi2-зак-покуп",
+  "className": "ЗакПокуп",
+  "nameSpace": "IIS.Avtomatizaciya_Prodazhi2",
+  "parentModelName": "i-i-s-avtomatizaciya-prodazhi2-отч-о-прод",
+  "parentClassName": "ОтчОПрод",
+  "attrs": [],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗакПокупE",
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-зак-покуп",
+      "attrs": [
+        {
+          "name": "датаНачала",
+          "caption": "Дата начала",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаОкончания",
+          "caption": "Дата окончания",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "состОплат",
+          "caption": "Состояние оплаты",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "состОтгруз",
+          "caption": "Состояние отгрузки",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "сумВклНДС",
+          "caption": "Сумма включая НДС",
+          "hidden": false,
+          "index": 14
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Менедж",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 0,
+          "type": "standard",
+          "caption": "Менеджер",
+          "name": "менедж",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-менедж",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Организация",
+          "lookupValueField": "организация",
+          "relationName": "Организ",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "организация",
+              "caption": "Организация",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Организация",
+          "name": "организ",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-организ",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Подразделение",
+          "lookupValueField": "подразделение",
+          "relationName": "Подраз",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "подразделение",
+              "caption": "Подразделение",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Подразделение",
+          "name": "подраз",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-подраз",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Склад",
+          "lookupValueField": "склад",
+          "relationName": "Склады",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "склад",
+              "caption": "Склад",
+              "hidden": true,
+              "index": 8
+            }
+          ],
+          "index": 7,
+          "type": "standard",
+          "caption": "Склад",
+          "name": "склады",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-склады",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Контрагент",
+          "lookupValueField": "контрагент",
+          "relationName": "Контр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "контрагент",
+              "caption": "Контрагент",
+              "hidden": true,
+              "index": 10
+            }
+          ],
+          "index": 9,
+          "type": "standard",
+          "caption": "Контрагент",
+          "name": "контр",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-контр",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ТЧТовИУсE",
+          "caption": "Табличная часть товаров и услуг",
+          "name": "тЧТовИУс",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-т-ч-тов-и-ус",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ЗакПокупL",
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-зак-покуп",
+      "attrs": [
+        {
+          "name": "датаОкончания",
+          "caption": "Дата окончания",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаНачала",
+          "caption": "Дата начала",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "сумВклНДС",
+          "caption": "Сум вкл НДС",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "состОтгруз",
+          "caption": "Сост отгруз",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "состОплат",
+          "caption": "Сост оплат",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Склады",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "склад",
+              "caption": "Склад",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Склад",
+          "name": "склады",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-склады",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организ",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "организация",
+              "caption": "Организация",
+              "hidden": false,
+              "index": 7
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Организация",
+          "name": "организ",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-организ",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Контр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "контрагент",
+              "caption": "Контрагент",
+              "hidden": false,
+              "index": 8
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Контрагент",
+          "name": "контр",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-контр",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Подраз",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "подразделение",
+              "caption": "Подразделение",
+              "hidden": false,
+              "index": 9
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Подразделение",
+          "name": "подраз",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-подраз",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

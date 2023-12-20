@@ -1,0 +1,9 @@
+﻿{
+  "nameSpace": "IIS.Avtomatizaciya_Prodazhi2",
+  "className": "СостОтгр",
+  "enumObjects": {
+    "Отгруж": "",
+    "НеОтгруж": "",
+    "ЧастичОтгруз": ""
+  }
+}

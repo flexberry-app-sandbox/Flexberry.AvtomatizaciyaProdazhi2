@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISAvtomatizaciya_Prodazhi2ЕдИзмер",
+  "modelName": "i-i-s-avtomatizaciya-prodazhi2-ед-измер",
+  "className": "ЕдИзмер",
+  "nameSpace": "IIS.Avtomatizaciya_Prodazhi2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "едИзм",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЕдИзмерE",
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-ед-измер",
+      "attrs": [
+        {
+          "name": "едИзм",
+          "caption": "Единицы измерения",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ЕдИзмерL",
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-ед-измер",
+      "attrs": [
+        {
+          "name": "едИзм",
+          "caption": "Ед изм",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

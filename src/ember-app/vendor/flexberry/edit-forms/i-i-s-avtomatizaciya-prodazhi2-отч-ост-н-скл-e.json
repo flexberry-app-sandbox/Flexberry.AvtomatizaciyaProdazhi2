@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Склады",
+      "projection": "СкладыL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Номенк",
+      "projection": "НоменкL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "КолВРез",
+      "projection": "КолВРезL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Отчет остатки на складе",
+  "name": "IISAvtomatizaciya_Prodazhi2ОтчОстНСклE",
+  "className": "ОтчОстНСклE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-отч-ост-н-скл",
+      "modelProjection": "ОтчОстНСклE"
+    }
+  ]
+}

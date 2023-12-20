@@ -1,0 +1,82 @@
+﻿{
+  "name": "IISAvtomatizaciya_Prodazhi2Менедж",
+  "modelName": "i-i-s-avtomatizaciya-prodazhi2-менедж",
+  "className": "Менедж",
+  "nameSpace": "IIS.Avtomatizaciya_Prodazhi2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотруд",
+      "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-сотруд",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "МенеджE",
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-менедж",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотруд",
+          "belongsTo": [],
+          "hidden": true,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 0
+            }
+          ],
+          "index": 1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "сотруд",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-сотруд",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "МенеджL",
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-менедж",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотруд",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "сотруд",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-сотруд",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

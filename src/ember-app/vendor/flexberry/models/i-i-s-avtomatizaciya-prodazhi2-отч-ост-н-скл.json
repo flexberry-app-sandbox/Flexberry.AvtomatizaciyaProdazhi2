@@ -1,0 +1,225 @@
+﻿{
+  "name": "IISAvtomatizaciya_Prodazhi2ОтчОстНСкл",
+  "modelName": "i-i-s-avtomatizaciya-prodazhi2-отч-ост-н-скл",
+  "className": "ОтчОстНСкл",
+  "nameSpace": "IIS.Avtomatizaciya_Prodazhi2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "колл",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "колВРез",
+      "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-кол-в-рез",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "номенк",
+      "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-номенк",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "склады",
+      "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-склады",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОтчОстНСклE",
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-отч-ост-н-скл",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "колл",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Склад",
+          "lookupValueField": "склад",
+          "relationName": "Склады",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "склад",
+              "caption": "Склад",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Склад",
+          "name": "склады",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-склады",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Номен",
+          "lookupValueField": "номен",
+          "relationName": "Номенк",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номен",
+              "caption": "Номенклатура",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Номенклатура",
+          "name": "номенк",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-номенк",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Количество",
+          "lookupValueField": "количество",
+          "relationName": "КолВРез",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "количество",
+              "caption": "Количество",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Количество в резерве",
+          "name": "колВРез",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-кол-в-рез",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ОтчОстНСклL",
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-отч-ост-н-скл",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "колл",
+          "caption": "Колл",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Склады",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "склад",
+              "caption": "Склад",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Склад",
+          "name": "склады",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-склады",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "КолВРез",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "количество",
+              "caption": "Количество",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Количество",
+          "name": "колВРез",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-кол-в-рез",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Номенк",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номен",
+              "caption": "Номен",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номен",
+          "name": "номенк",
+          "relatedTo": "i-i-s-avtomatizaciya-prodazhi2-номенк",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

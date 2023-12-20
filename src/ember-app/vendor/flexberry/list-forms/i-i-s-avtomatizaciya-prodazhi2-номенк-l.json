@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-avtomatizaciya-prodazhi2-номенк-e",
+  "editForm": "i-i-s-avtomatizaciya-prodazhi2-номенк-e",
+  "external": false,
+  "caption": "Номеклатура",
+  "name": "IISAvtomatizaciya_Prodazhi2НоменкL",
+  "className": "НоменкL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-prodazhi2-номенк",
+      "modelProjection": "НоменкL"
+    }
+  ]
+}

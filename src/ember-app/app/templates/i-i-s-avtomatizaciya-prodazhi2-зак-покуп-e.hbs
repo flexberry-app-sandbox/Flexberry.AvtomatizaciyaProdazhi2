@@ -1,0 +1,191 @@
+<h3 class="ui header">{{t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.менедж-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.менедж
+      relationName="менедж"
+      projection="МенеджL"
+      title=(t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.менедж-caption")
+      readonly=readonly
+      componentName="менеджLookup"
+      class=(if (v-get validationModel "менедж" "isInvalid") "error")
+      data-test-i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e-менедж=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "менедж" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.датаНачала-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаНачала
+      class=(if (v-get validationModel "датаНачала" "isInvalid") "error")
+      data-test-i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e-датаНачала=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаНачала" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.датаОкончания-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаОкончания
+      class=(if (v-get validationModel "датаОкончания" "isInvalid") "error")
+      data-test-i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e-датаОкончания=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаОкончания" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.организ-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.организ
+      displayAttributeName="организация"
+      autocomplete=true
+      relationName="организ"
+      projection="ОрганизL"
+      title=(t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.организ-caption")
+      readonly=readonly
+      componentName="организLookup"
+      class=(if (v-get validationModel "организ" "isInvalid") "error")
+      data-test-i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e-организ=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "организ" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.подраз-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.подраз
+      displayAttributeName="подразделение"
+      autocomplete=true
+      relationName="подраз"
+      projection="ПодразL"
+      title=(t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.подраз-caption")
+      readonly=readonly
+      componentName="подразLookup"
+      class=(if (v-get validationModel "подраз" "isInvalid") "error")
+      data-test-i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e-подраз=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "подраз" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.склады-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.склады
+      displayAttributeName="склад"
+      autocomplete=true
+      relationName="склады"
+      projection="СкладыL"
+      title=(t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.склады-caption")
+      readonly=readonly
+      componentName="складыLookup"
+      class=(if (v-get validationModel "склады" "isInvalid") "error")
+      data-test-i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e-склады=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "склады" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.контр-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.контр
+      displayAttributeName="контрагент"
+      autocomplete=true
+      relationName="контр"
+      projection="КонтрL"
+      title=(t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.контр-caption")
+      readonly=readonly
+      componentName="контрLookup"
+      class=(if (v-get validationModel "контр" "isInvalid") "error")
+      data-test-i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e-контр=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "контр" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e-состОплат="true">
+    <label>{{t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.состОплат-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-avtomatizaciya-prodazhi2-сост-опл")
+      value=model.состОплат
+      class=(if (v-get validationModel "состОплат" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "состОплат" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e-состОтгруз="true">
+    <label>{{t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.состОтгруз-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-avtomatizaciya-prodazhi2-сост-отгр")
+      value=model.состОтгруз
+      class=(if (v-get validationModel "состОтгруз" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "состОтгруз" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.сумма
+      class=(if (v-get validationModel "сумма" "isInvalid") "error")
+      label=(t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.сумма-caption")
+      data-test-i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e-сумма=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "сумма" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.сумВклНДС-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.сумВклНДС
+      class=(if (v-get validationModel "сумВклНДС" "isInvalid") "error")
+      data-test-i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e-сумВклНДС=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "сумВклНДС" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e.тЧТовИУс-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="тЧТовИУсGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.тЧТовИУс
+      content=model.тЧТовИУс
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "тЧТовИУс" "isInvalid") "error")
+      data-test-i-i-s-avtomatizaciya-prodazhi2-зак-покуп-e-тЧТовИУс=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "тЧТовИУс" "message")}}
+  </div>
+</form>
