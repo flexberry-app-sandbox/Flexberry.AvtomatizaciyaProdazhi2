@@ -17,7 +17,7 @@
             {
               "link": "i-i-s-avtomatizaciya-prodazhi2-зак-покуп-l",
               "menuName": null,
-              "caption": "Зак покуп",
+              "caption": "Заказ покупателя",
               "title": "",
               "children": null
             }
@@ -32,14 +32,14 @@
             {
               "link": "i-i-s-avtomatizaciya-prodazhi2-отч-о-прод-l",
               "menuName": null,
-              "caption": "Отч о прод",
+              "caption": "Отчет о продажах",
               "title": "",
               "children": null
             },
             {
               "link": "i-i-s-avtomatizaciya-prodazhi2-отч-ост-н-скл-l",
               "menuName": null,
-              "caption": "Отч ост н скл",
+              "caption": "Отчет об остатках",
               "title": "",
               "children": null
             }
@@ -54,70 +54,70 @@
             {
               "link": "i-i-s-avtomatizaciya-prodazhi2-ед-измер-l",
               "menuName": null,
-              "caption": "Ед измер",
+              "caption": "Единицы измерения",
               "title": "",
               "children": null
             },
             {
               "link": "i-i-s-avtomatizaciya-prodazhi2-долж-l",
               "menuName": null,
-              "caption": "Долж",
+              "caption": "Должность",
               "title": "",
               "children": null
             },
             {
               "link": "i-i-s-avtomatizaciya-prodazhi2-менедж-l",
               "menuName": null,
-              "caption": "Менедж",
+              "caption": "Менеджер",
               "title": "",
               "children": null
             },
             {
               "link": "i-i-s-avtomatizaciya-prodazhi2-сотруд-l",
               "menuName": null,
-              "caption": "Сотруд",
+              "caption": "Сотрудники",
               "title": "",
               "children": null
             },
             {
               "link": "i-i-s-avtomatizaciya-prodazhi2-номенк-l",
               "menuName": null,
-              "caption": "Номенк",
+              "caption": "Номенклатура",
               "title": "",
               "children": null
             },
             {
               "link": "i-i-s-avtomatizaciya-prodazhi2-организ-l",
               "menuName": null,
-              "caption": "Организ",
+              "caption": "Организация",
               "title": "",
               "children": null
             },
             {
               "link": "i-i-s-avtomatizaciya-prodazhi2-подраз-l",
               "menuName": null,
-              "caption": "Подраз",
+              "caption": "Подразделение",
               "title": "",
               "children": null
             },
             {
               "link": "i-i-s-avtomatizaciya-prodazhi2-кол-в-рез-l",
               "menuName": null,
-              "caption": "Кол в рез",
+              "caption": "Количество в резерве",
               "title": "",
               "children": null
             },
             {
               "link": "i-i-s-avtomatizaciya-prodazhi2-контр-l",
               "menuName": null,
-              "caption": "Контр",
+              "caption": "Контрагент",
               "title": "",
               "children": null
             },
             {
               "link": "i-i-s-avtomatizaciya-prodazhi2-склады-l",
               "menuName": null,
-              "caption": "Склады",
+              "caption": "Склад",
               "title": "",
               "children": null
             }
