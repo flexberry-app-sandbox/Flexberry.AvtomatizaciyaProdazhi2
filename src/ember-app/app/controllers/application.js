@@ -32,7 +32,7 @@ export default Controller.extend({
               link: 'i-i-s-avtomatizaciya-prodazhi2-зак-покуп-l',
               caption: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.документы.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-l.caption'),
               title: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.документы.i-i-s-avtomatizaciya-prodazhi2-зак-покуп-l.title'),
-              icon: 'chart bar',
+              icon: 'list',
               children: null
             }]
           }, {
@@ -43,13 +43,13 @@ export default Controller.extend({
               link: 'i-i-s-avtomatizaciya-prodazhi2-отч-о-прод-l',
               caption: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.отчеты.i-i-s-avtomatizaciya-prodazhi2-отч-о-прод-l.caption'),
               title: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.отчеты.i-i-s-avtomatizaciya-prodazhi2-отч-о-прод-l.title'),
-              icon: 'tags',
+              icon: 'list',
               children: null
             }, {
               link: 'i-i-s-avtomatizaciya-prodazhi2-отч-ост-н-скл-l',
               caption: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.отчеты.i-i-s-avtomatizaciya-prodazhi2-отч-ост-н-скл-l.caption'),
               title: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.отчеты.i-i-s-avtomatizaciya-prodazhi2-отч-ост-н-скл-l.title'),
-              icon: 'paperclip',
+              icon: 'archive',
               children: null
             }]
           }, {
@@ -60,36 +60,37 @@ export default Controller.extend({
               link: 'i-i-s-avtomatizaciya-prodazhi2-ед-измер-l',
               caption: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-ед-измер-l.caption'),
               title: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-ед-измер-l.title'),
-              icon: 'building',
+              icon: 'archive',
               children: null
             }, {
               link: 'i-i-s-avtomatizaciya-prodazhi2-долж-l',
               caption: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-долж-l.caption'),
               title: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-долж-l.title'),
-              icon: 'briefcase',
+              icon: 'folder',
               children: null
             }, {
               link: 'i-i-s-avtomatizaciya-prodazhi2-менедж-l',
               caption: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-менедж-l.caption'),
               title: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-менедж-l.title'),
-              icon: 'paperclip',
+              icon: 'building',
               children: null
             }, {
               link: 'i-i-s-avtomatizaciya-prodazhi2-сотруд-l',
               caption: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-сотруд-l.caption'),
               title: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-сотруд-l.title'),
+              icon: 'book',
               children: null
             }, {
               link: 'i-i-s-avtomatizaciya-prodazhi2-номенк-l',
               caption: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-номенк-l.caption'),
               title: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-номенк-l.title'),
-              icon: 'book',
+              icon: 'archive',
               children: null
             }, {
               link: 'i-i-s-avtomatizaciya-prodazhi2-организ-l',
               caption: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-организ-l.caption'),
               title: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-организ-l.title'),
-              icon: 'file',
+              icon: 'chart bar',
               children: null
             }, {
               link: 'i-i-s-avtomatizaciya-prodazhi2-подраз-l',
@@ -101,7 +102,7 @@ export default Controller.extend({
               link: 'i-i-s-avtomatizaciya-prodazhi2-кол-в-рез-l',
               caption: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-кол-в-рез-l.caption'),
               title: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-кол-в-рез-l.title'),
-              icon: 'calendar',
+              icon: 'table',
               children: null
             }, {
               link: 'i-i-s-avtomatizaciya-prodazhi2-контр-l',
@@ -113,7 +114,7 @@ export default Controller.extend({
               link: 'i-i-s-avtomatizaciya-prodazhi2-склады-l',
               caption: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-склады-l.caption'),
               title: i18n.t('forms.application.sitemap.avtomatizaciya-prodazhi2.справочники.i-i-s-avtomatizaciya-prodazhi2-склады-l.title'),
-              icon: 'building',
+              icon: 'list',
               children: null
             }]
           }]
